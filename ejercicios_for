@@ -1,0 +1,242 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMsvrdfN98YE7UkDVL+lqgV",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/madelinrodriguez/ejercicios_for/blob/main/ejercicios_for\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "INTRUCCIONES REPETITIVAS FOR"
+      ],
+      "metadata": {
+        "id": "-oT7USzUsLsn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "V_aGbmKqqiHE"
+      },
+      "outputs": [],
+      "source": [
+        "# EJERCICIO 1: mostrar los números del 1 al 10, sin usar intrucciones repetitivas\n",
+        "\n",
+        "print(1)\n",
+        "print(2)\n",
+        "print(3)\n",
+        "print(4)\n",
+        "print(5)\n",
+        "print(6)\n",
+        "print(7)\n",
+        "print(8)\n",
+        "print(9)\n",
+        "print(10)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 2: mostrando del 1 al 10, usando la instrucion while\n",
+        "\n",
+        "contador = 1\n",
+        "print(contador)\n",
+        "while contador <10:\n",
+        "  # contador = contador + 1\n",
+        "  contador += 1\n",
+        "  print(contador)"
+      ],
+      "metadata": {
+        "id": "vDOWiVYRuhrI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 3: mostrando los números 1 al 10, usando la instrucion for y una lista como iterable\n",
+        "\n",
+        "lista = (1,2,3,4,5,6,7,8,9,10)\n",
+        "for i in lista:\n",
+        "  print(i)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "JEORnGt0vj8w"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 4: mostrando los números del 1 la 10, usando la instruccion for y la funcion range \n",
+        "\n",
+        "for i in range(1,11):\n",
+        "  print(i)\n"
+      ],
+      "metadata": {
+        "id": "orzDATs8w1pQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 5: mostrando una frase 10 veces, usando la instrucicion for y una lista\n",
+        "\n",
+        "lista = (1,2,3,4,5,6,7,8,9,10)\n",
+        "for i in lista:\n",
+        "  print(f\"{i} sistemas, la mejor!!!\")\n"
+      ],
+      "metadata": {
+        "id": "lNR5g3Y9xgur"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 6: mostrar la silaba de los dias de la semana, usando for y una lista con la silaba inicial de los dias de la semana\n",
+        "\n",
+        "dias_semana = [\"lu\", \"mar\", \"mi\", \"ju\", \"vi\", \"sa\", \"do\"]\n",
+        "for i in dias_semana:\n",
+        "  print(i)\n",
+        "  "
+      ],
+      "metadata": {
+        "id": "GDgnEZtayhPu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 7: mostrar una lista de distitos tipos de datos, usando for\n",
+        "\n",
+        "lista = [1, 3,4, 9, True, \"nestor\", 8, \"Guanenta\"]\n",
+        "for i in lista:\n",
+        "  print(i)\n"
+      ],
+      "metadata": {
+        "id": "AsDX2In5zsZr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 8: ingresar su nombre y mostrar letra a letra, usando for\n",
+        "\n",
+        "nombre = input(\"Digite su nombre: \")\n",
+        "for letra in nombre:\n",
+        "  print(letra)\n"
+      ],
+      "metadata": {
+        "id": "KZc5qBpW0vnX"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 9: ingrese su nombre y mostralo letra a letra, usando for, cambiando por asterisco * a la coval e\n",
+        "\n",
+        "nombre = input(\"Digite su nombre: \")\n",
+        "for letra in nombre:\n",
+        "  if letra == \"e\":\n",
+        "   print(\"*\")\n",
+        "  else:\n",
+        "    print(letra)"
+      ],
+      "metadata": {
+        "id": "rnYJZ4qE1jKJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 10: ingresar su nombre y mostralo letra a letra, en mayúscula, usando for\n",
+        "\n",
+        "nombre = input(\"Digite su nombre: \")\n",
+        "for letra in nombre:\n",
+        "  print(letra.upper())\n"
+      ],
+      "metadata": {
+        "id": "zTohvl0c_bkS"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# EJERCICIO 11: imprimir lista de números usando for y range \n",
+        "\n",
+        "print(\"Números del 0 al 9\")\n",
+        "for i in range(10):\n",
+        "  print(1)\n",
+        "\n",
+        "print(\"Número del 1 al 10\")\n",
+        "for i in range(1,11):\n",
+        "  print(i)\n",
+        "\n",
+        "print(\"10 veces la frase\")\n",
+        "for i in range(10):\n",
+        "  print(\"sistemas la mejor\")\n",
+        "\n",
+        "print(\"10 veces la frase i = \")\n",
+        "for i in range(10):\n",
+        "   print(\"1 =\" + str(1))\n",
+        "\n",
+        "print(\"10 veces la frase 1 =\")\n",
+        "for i in range(10):\n",
+        "  print(f\" i = {i}\")\n",
+        "\n",
+        "print(\"Rango del 7 al 18, incrementando de 4 en 4\")\n",
+        "for i in range(7,19,4):\n",
+        "  print(i)\n",
+        " \n",
+        "print(\"Convierte rango en lista a, y la muestra\")\n",
+        "a = list(range(1000))\n",
+        "print(a)\n"
+      ],
+      "metadata": {
+        "id": "Bbhl4GbJBEzc"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
